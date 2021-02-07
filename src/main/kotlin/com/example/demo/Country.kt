@@ -31,7 +31,7 @@ class Country (var code : Int, var country : String, var countrycode : String){
     }
 
     override fun toString(): String {
-        return "$id se ha conectado al servidor "
+        return "$countrycode esta disponible para su consulta "
     }
 
 

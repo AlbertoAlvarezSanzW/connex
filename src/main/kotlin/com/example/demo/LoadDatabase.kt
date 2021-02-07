@@ -21,7 +21,10 @@ class LoadDatabase {
         return CommandLineRunner { args: Array<String?>? ->
             logger.info("Preloading " + countryRepository.save(Country(1,"Spain","ES")))
             logger.info("Preloading " + countryRepository.save(Country(2,"United States","US")))
-            //logger.info("Preloading " + countryRepository.save(Country(3,"United States","US")))
+            logger.info("Preloading " + countryRepository.save(Country(3,"Andorra","AD")))
+            logger.info("Preloading " + countryRepository.save(Country(4,"France","FR")))
+            logger.info("Preloading " + countryRepository.save(Country(5,"Germany","DE")))
+            logger.info("Preloading " + countryRepository.save(Country(6,"Brazil","BR")))
         }
     }
 }
