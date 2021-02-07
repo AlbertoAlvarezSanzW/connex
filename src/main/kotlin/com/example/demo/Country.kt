@@ -5,8 +5,8 @@ import javax.persistence.Entity
 import javax.persistence.GeneratedValue
 import javax.persistence.Id
 
-// curl -v localhost:8080/students              <- le diremos a que url le estamos mandando y con la / le pedimos la lista de students
-// curl -v localhost:8080/students/0
+// curl -v localhost:8080/countries             <- le diremos a que url le estamos mandando y con la / le pedimos la lista de students
+// curl -v localhost:8080/country/1
 
 @Entity
 class Country (var code : Int, var country : String, var countrycode : String){
@@ -31,7 +31,7 @@ class Country (var code : Int, var country : String, var countrycode : String){
     }
 
     override fun toString(): String {
-        return "$id es un alumno llamado "
+        return "$id se ha conectado al servidor "
     }
 
 
