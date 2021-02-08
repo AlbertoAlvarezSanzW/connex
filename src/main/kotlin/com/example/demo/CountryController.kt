@@ -8,7 +8,7 @@ class CountryController (private val countryRepository: CountryRepository) {
 
     @GetMapping("/countries")
     fun getAllCountries() : List<Country> {
-        // fubdAll es para que nos retorne todos los estudiantes que tenemos
+
         return countryRepository.findAll()
     }
 
